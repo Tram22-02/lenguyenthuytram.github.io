@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('water-bubbles.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 a {
+            color: #f0f8ff; /* Màu trắng tuyết */
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        h1 a:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        .welcome-message {
+            font-size: 2em;
+            color: #f0f8ff; /* Màu trắng tuyết */
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #f0f8ff, 0 0 10px #f0f8ff;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        .info {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1.2em;
+            color: #f0f8ff; /* Màu trắng tuyết */
+            font-weight: bold;
+            text-shadow: 0 0 5px #f0f8ff, 0 0 10px #f0f8ff;
+            animation: sparkle 2s infinite alternate;
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                text-shadow: 0 0 5px #f0f8ff, 0 0 10px #f0f8ff;
+                transform: scale(1);
+            }
+            50% {
+                text-shadow: 0 0 10px #f0f8ff, 0 0 15px #f0f8ff;
+                transform: scale(1.02);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 class="welcome-message">
+        CHÀO MỪNG CÁC BẠN ĐÃ ĐẾN VỚI TRANG BÀI TẬP CÁ NHÂN CỦA MÌNH
+    </h2>
+    <h1>
+        <a href="images/code.cv.html">CV cá nhân</a><br>
+        <a href="HoCa/index.html">Hồ cá</a>
+    </h1>
+    <div class="info">
+        Lê Nguyễn Thùy Trâm - 50.01.103.076
+    </div>
+</body>
+</html>
